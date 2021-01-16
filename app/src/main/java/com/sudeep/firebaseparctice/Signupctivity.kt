@@ -40,7 +40,7 @@ class Signupctivity : AppCompatActivity() {
                         .addOnCompleteListener { task ->
                             if (task.isSuccessful) {
                                 Toast.makeText(this, "Registration successful.", Toast.LENGTH_LONG).show()
-                                val intent =Intent(this,HomeActivity::class.java)
+                                val intent =Intent(this,LoginActivity::class.java)
                                 startActivity(intent)
                                 finish()
                             } else {
